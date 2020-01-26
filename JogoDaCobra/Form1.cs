@@ -123,7 +123,7 @@ namespace JogoDaCobra
                     }
                     else
                     {
-                        snakeColour = Brushes.Green;
+                        snakeColour = Brushes.ForestGreen;
                     }
                     canvas.FillEllipse(snakeColour,
                         new Rectangle(Snake[i].X * Settings.Widht,
@@ -160,7 +160,7 @@ namespace JogoDaCobra
             int maxYPos = pbCanvas.Size.Height / Settings.Height;
 
             Random random = new Random();
-            food = new Circle { X = random.Next(0, maxXPos), Y = random.Next(0, maxXPos) };
+            food = new Circle { X = random.Next(0, maxXPos), Y = random.Next(0, maxYPos) };
         }
 
         private void eat()

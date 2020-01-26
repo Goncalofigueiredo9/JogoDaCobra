@@ -68,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -81,6 +82,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-keyboard-arrow-keys-clip-art-5adca312ee3014.5868969515244091069756.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-button-on-keyboard-icon-260nw-339331691.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capturar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campo1.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
