@@ -109,16 +109,6 @@ namespace JogoDaCobra
             }
         }
 
-        private void keyisdown(object sender, KeyEventArgs e)
-        {
-            input.changeState(e.KeyCode, true);
-        }
-
-        private void keyisup(object sender, KeyEventArgs e)
-        {
-            input.changeState(e.KeyCode, false);
-        }
-
         private void updateGraphics(object sender, PaintEventArgs e)
         {
             Graphics canvas = e.Graphics;
@@ -146,7 +136,7 @@ namespace JogoDaCobra
             }
             else
             {
-                string gameOver = "Game Over \n" + "Resultado final é " + Settings.Score + "\n Pressiona Enter para Reiniciar \n";
+                string gameOver = "Game Over \n" + "Resultado final é " + Settings.Score + "\nPressiona Enter para Reiniciar \n";
                 label3.Text = gameOver;
                 label3.Visible = true;
             }
@@ -161,7 +151,7 @@ namespace JogoDaCobra
             head.X = 10;
             head.Y = 5;
             Snake.Add(head);
-            label3.Text = Settings.Score.ToString();
+            label1.Text = Settings.Score.ToString();
             GenerateFood();
         }
         private void GenerateFood()
@@ -191,6 +181,16 @@ namespace JogoDaCobra
         private void die()
         {
             Settings.GameOver = true;
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            input.changeState(e.KeyCode, true);
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            input.changeState(e.KeyCode, false);
         }
     }
 }
