@@ -123,7 +123,7 @@ namespace JogoDaCobra
                     }
                     else
                     {
-                        snakeColour = Brushes.ForestGreen;
+                        snakeColour = Brushes.Silver;
                     }
                     canvas.FillEllipse(snakeColour,
                         new Rectangle(Snake[i].X * Settings.Widht,
@@ -192,5 +192,6 @@ namespace JogoDaCobra
         {
             input.changeState(e.KeyCode, false);
         }
+
     }
 }
