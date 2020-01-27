@@ -192,6 +192,5 @@ namespace JogoDaCobra
         {
             input.changeState(e.KeyCode, false);
         }
-
     }
 }

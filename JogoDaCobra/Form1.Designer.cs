@@ -74,7 +74,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 37);
             this.label2.TabIndex = 6;
-            this.label2.Text = "4700";
+            this.label2.Text = "7000";
             // 
             // pictureBox3
             // 
