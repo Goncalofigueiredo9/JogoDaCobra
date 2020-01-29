@@ -185,7 +185,10 @@ namespace JogoDaCobra
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+
             input.changeState(e.KeyCode, true);
+            if (gameTimer.Enabled == true) { if (e.KeyCode == Keys.Space) gameTimer.Enabled = false;}
+            else gameTimer.Enabled = true;
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)

@@ -28,6 +28,5 @@ namespace JogoDaCobra
         {
             keyTable[key] = state;
         }
-
     }
 }
