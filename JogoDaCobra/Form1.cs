@@ -195,5 +195,10 @@ namespace JogoDaCobra
         {
             input.changeState(e.KeyCode, false);
         }
+
+        private void ajuda(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "C:\\Users\\GoncaloF\\source\\repos\\Goncalofigueiredo9\\JogoDaCobra\\JogoDaCobra\\Resources\\ajuda.chm");
+        }
     }
 }
