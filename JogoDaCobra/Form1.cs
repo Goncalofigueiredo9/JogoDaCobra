@@ -198,7 +198,7 @@ namespace JogoDaCobra
 
         private void ajuda(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "C:\\Users\\GoncaloF\\source\\repos\\Goncalofigueiredo9\\JogoDaCobra\\JogoDaCobra\\Resources\\ajuda.chm");
+            Help.ShowHelp(this, "C:\\Users\\Utilizador\\source\\repos\\Goncalofigueiredo9\\JogoDaCobra\\JogoDaCobra\\Resources\\ajuda.chm");
         }
     }
 }
