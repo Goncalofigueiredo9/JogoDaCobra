@@ -61,6 +61,16 @@ namespace JogoDaCobra.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Byte[].
+        /// </summary>
+        internal static byte[] ajuda {
+            get {
+                object obj = ResourceManager.GetObject("ajuda", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap arrow_button_on_keyboard_icon_260nw_339331691 {

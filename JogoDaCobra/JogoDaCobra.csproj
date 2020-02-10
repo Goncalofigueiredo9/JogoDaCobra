@@ -84,6 +84,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ajuda.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\kisspng-computer-keyboard-arrow-keys-clip-art-5adca312ee3014.5868969515244091069756.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -103,9 +106,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\score-icon-21.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ajuda.bmp" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">

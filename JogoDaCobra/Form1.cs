@@ -200,7 +200,7 @@ namespace JogoDaCobra
 
         private void ajuda(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "C:\\Users\\Utilizador\\source\\repos\\Goncalofigueiredo9\\JogoDaCobra\\JogoDaCobra\\Resources\\ajuda.chm");
+            Help.ShowHelp(this,Application.StartupPath +  "\\Resources\\ajuda.chm");
         }
 
         private void Form1_Load(object sender, EventArgs e)
