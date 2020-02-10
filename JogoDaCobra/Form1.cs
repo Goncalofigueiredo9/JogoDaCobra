@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace JogoDaCobra
 {
     public partial class Form1 : Form
     {
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
         private List<Circle> Snake = new List<Circle>(); // lista para a cobra
         private Circle food = new Circle(); // class circle chamada comida
         public Form1()
@@ -23,7 +25,7 @@ namespace JogoDaCobra
             gameTimer.Interval = 1000 / Settings.Speed; // mudar o game time para a classe Settings speed
             gameTimer.Tick += updateScreen;
             gameTimer.Start();
-
+            player.URL = "snakemusic.mp3";
             StartGame();
         }
 
@@ -199,6 +201,12 @@ namespace JogoDaCobra
         private void ajuda(object sender, EventArgs e)
         {
             Help.ShowHelp(this, "C:\\Users\\Utilizador\\source\\repos\\Goncalofigueiredo9\\JogoDaCobra\\JogoDaCobra\\Resources\\ajuda.chm");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            player.controls.play();
+            player.settings.playCount = 2;
         }
     }
 }
